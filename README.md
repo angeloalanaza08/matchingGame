@@ -1,3 +1,3 @@
 Project Based Learning Module by Fireship.com
 
-Customize Matching game
+Customize Matching Game Lesson Module
