@@ -1,6 +1,7 @@
+import React from "react";
 import { useEffect } from "react";
 
-const Header = ({ handleNewGame, wins }) => {
+const Header = ({ handleNewGame, wins, elapsedTime }) => {
   // Update page title with win count
   useEffect(() => (document.title = `${wins} wins`), [wins]);
 
@@ -8,7 +9,8 @@ const Header = ({ handleNewGame, wins }) => {
     <header className="header">
       <h3>Memory Game</h3>
       <h4>{wins} wins</h4>
-      <button onClick={handleNewGame}>New Game</button>
+      <h4>{elapsedTime} seconds</h4>
+      <button onClick={handleNewGame}>RESET GAME</button>
     </header>
   );
 };
